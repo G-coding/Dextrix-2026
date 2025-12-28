@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Corner cuts */
+.clip-tl {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.clip-tr {
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.clip-bl {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.clip-br {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* Top notch (VERY IMPORTANT) */
+.clip-top-notch {
+  clip-path: polygon(
+    0 0,
+    8% 0,
+    12% 40%,
+    88% 40%,
+    92% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Side mid-edge arrow cuts */
+.clip-side-notch {
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
